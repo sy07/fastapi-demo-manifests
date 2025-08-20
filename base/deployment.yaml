@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi-demo
+  name: fastapi_dev
 spec:
   replicas: 1
-  selector: { matchLabels: { app: fastapi-demo } }
+  selector: { matchLabels: { app: fastapi_dev } }
   template:
-    metadata: { labels: { app: fastapi-demo } }
+    metadata: { labels: { app: fastapi_dev } }
     spec:
       containers:
       - name: app
-        image: ghcr.io/yourname/fastapi-demo:CHANGE_ME
+        image: ghcr.io/sy07/fastapi_dev:CHANGE_ME
         ports: [{ containerPort: 8000 }]
         readinessProbe:
           httpGet: { path: "/", port: 8000 }
