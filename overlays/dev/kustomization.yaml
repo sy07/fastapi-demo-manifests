@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+images:
+  - name: ghcr.io/sy07/fastapi_dev
+    newName: ghcr.io/sy07/fastapi_dev
+    newTag: CHANGE_ME
