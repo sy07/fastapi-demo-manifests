@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi_dev
+  name: fastapi-demo
 spec:
   replicas: 1
-  selector: { matchLabels: { app: fastapi_dev } }
+  selector: { matchLabels: { app: fastapi-demo } }
   template:
-    metadata: { labels: { app: fastapi_dev } }
+    metadata: { labels: { app: fastapi-demo } }
     spec:
       containers:
       - name: app
